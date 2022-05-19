@@ -1,0 +1,12 @@
+#include<iostream>  
+using namespace std;  
+class Base  
+{                              
+    public: /* A public access specifier defines Constructor and Destructor function to call by any object in the class. */  
+    Base() // Constructor function.   
+{  
+    cout<< "\n Constructor Base class";  
+}  
+~Base() // Destructor function   
+{  
+    cout<< "\n Destructor Base class"; 

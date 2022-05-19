@@ -1,0 +1,20 @@
+A program to display a class destructor's behavior using a virtual destructor in C ++.
+#include<iostream>  
+using namespace std;  
+class Base  
+{  
+    public:  
+    Base() // Constructor
+{  
+    cout << "\n Constructor Base class";  // It prints first.  
+}  
+ virtual ~Base() // Define the virtual destructor function to call the Destructor Derived function.  
+{   cout << "\n Destructor Base class";  /  }  
+};  
+// Inheritance concept  
+class Derived: public Base   
+{  
+    public:  
+    Derived() // Constructor
+{  
+    cout << "\n Constructor Derived class" ; /* After print the Constructor Base, now it will print. */  }  
